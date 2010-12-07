@@ -1,0 +1,7 @@
+Version 0.1
+	-	Initial Build
+	
+Version 0.1.1
+	-	Added: The Basic PHP Code for writing and fetching Posts
+	-	Added: Style and PHP Code for odd and even Posts
+	-	Changed: index.html renamed into index.php

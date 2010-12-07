@@ -20,12 +20,18 @@
 		
 		<h1>Ajax Shoutbox</h1>
 		
-		<div id="shoutbox">
+		<div id="shoutbox" class="wrapper">
 			<div id="entries">
-					<span class="loader">
-						<img src="_img/indicator.gif" alt="loading&hellip; Please wait"/><br />
-						Lade Beitr&auml;ge&hellip;
-					</span>
+					<?php
+						include('backend.inc.php');
+					?>
+					<noscript>
+						<span class="loader">
+							<img src="_img/indicator.gif" alt="loading&hellip; Please wait"/><br />
+							Lade Beitr&auml;ge&hellip;
+						</span>
+					</noscript>
+					<?php /*
 					<div class="post odd">
 						<div class="metaInfo"><abbr title="Am 17. Dezember 2010">David</abbr> schrieb:</div>
 						<div class="text">
@@ -46,8 +52,11 @@
 							<p>Baaaam Admin Power!!</p>
 						</div>
 					</div>
+					*/ ?>
 			</div>
-			<form id="shout" action="backend.php" method="post">
+			<form id="shout" action="backend.inc.php" method="post">
+				<input type="hidden" name="format" value="json" />
+				<input type="hidden" name="action" value="write">
 				<div class="relative">
 					<label for="name" class="absolute">Name</label>
 					<input type="text" name="name" id="name" >
@@ -56,6 +65,7 @@
 					<label for="message" class="absolute">Nachricht</label>
 					<textarea name="message" id="message"></textarea>
 				</div>
+				<input type="submit" value="Senden" class="submit" name="submit">
 			</form>
 		</div>
 		
@@ -63,6 +73,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="_js/jquery.js"><\/script>')</script>
 	<script src="_js/jquery.infieldlabel.min.js?v=1"></script>
-	<script src="_js/script.js?v=1"></script>
+	<?php 	//<script src="_js/script.js?v=1"></script> ?>
 </body>
 </html>

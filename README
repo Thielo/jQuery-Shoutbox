@@ -1,1 +1,13 @@
 /* Shoutbox Script with jQuery Support */
+
+For Changelog use the CHANGELOG File
+
+Features:
+	-	No Javascript Fallback
+	-	PHP
+	-	MySQL
+	-	Simple Style change
+	-	JSON Notation ;) (Geek Stuff)
+Comming Soon Features:
+	-	Small and Simple Backend
+	-	Installation file

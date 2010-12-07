@@ -19,14 +19,18 @@ hr.clear {
 	.post { padding: 10px 0; border-bottom: 1px solid #444; border-top: 1px solid #fff; border-top-color: rgba(255,255,255,.6); }
 	.post:last-child { border-bottom: none; }
 	.post:first-child { border-top: none; }
-	
+	.post.odd { color: #444;}
+	.post.even { color: #111; }
 	#entries .metaInfo { line-height: 1.2; }
-	#entries abbr { border-bottom: 1px dotted #fff;}
+	#entries abbr { cursor: help; font-weight: bold; border-bottom: 1px dotted #fff;}
 	#entries .loader, #shoutbox form { display: block; text-align: center; }
 	#entries .loader img { margin: 0 0 5px 0; }
 	#shoutbox input, #shoutbox textarea { font-family: "Lucida Grande"; line-height: 1; font-size: 12px; background: transparent url(../_img/form.png) no-repeat; border: 0; width: 166px; color: #fff; text-shadow: 1px 1px 0 #000;}
 	#shoutbox label { cursor: text; padding: 5px 0 0 5px; color: #fff; text-shadow: 1px 1px 0 #000;}
 	#shoutbox input { left: 0; top: 0; padding: 5px; background-position: -10px -10px; height: 15px; color: #d9d9d9; }
+	#shoutbox input.submit { background: transparent url(../_img/button.png) no-repeat -10px -10px; width: 89px; height: 29px; padding: 0; }
+	#shoutbox input.submit:hover { background-position: -10px -47px; }
+	#shoutbox input.submit:focus { outline: none; background-position: -10px -84px; }
 	#shoutbox textarea { padding: 5px; background-position: -10px -45px; height: 79px; color: #d9d9d9; }
 	
 	#shoutbox input.hover, #shoutbox input:hover, #shoutbox input:focus { background-position: -196px -10px; color: #fff;}
