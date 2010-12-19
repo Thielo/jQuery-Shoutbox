@@ -1,5 +1,27 @@
-/* Shoutbox Script with jQuery Support */
+Shoutbox Script with jQuery Support
+======================================
 
+A small Shoutbox Script with Javascript Support
+
+Installation
+-----------
+
+    Copy all files to your location and set up Variables you need
+
+	Create a New Database (or use an old one)
+	Use the following SQL Query for creating the Table an Field
+	DROP TABLE IF EXISTS `shoubox`;
+	CREATE TABLE IF NOT EXISTS `shoubox` (
+	  `id` int(11) NOT NULL AUTO_INCREMENT,
+	  `date` varchar(111) NOT NULL,
+	  `name` varchar(32) NOT NULL,
+	  `message` longtext NOT NULL,
+	  `ip` varchar(32) NOT NULL,
+	  PRIMARY KEY (`id`)
+	) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+Other
+-----
 For Changelog use the CHANGELOG File
 
 Features:
@@ -9,5 +31,5 @@ Features:
 	-	Simple Style change
 	-	JSON Notation ;) (Geek Stuff)
 Comming Soon Features:
-	-	Small and Simple Backend
+	-	Small and Simple Backend (Maybe in Cookie CMS ;) )
 	-	Installation file
