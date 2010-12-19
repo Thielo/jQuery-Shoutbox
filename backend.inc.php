@@ -4,7 +4,6 @@
 	$count = 5;
 	mysql_connect("databaseHost", "databaseUser", "databasePassword");
 	mysql_select_db("databaseName");
-	
 	/* Pre Set $action */
 	if(!isset($_POST['action'])){ $action = 'fetch'; }else{ $action = $_POST['action']; }
 	
