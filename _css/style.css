@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('reset.css');
+/*@import url('demo.css');*/
 /* insert here other import Files */
 /* Core CSS Selectors */
 /* Set-Up here your standard Classes */
@@ -15,6 +16,7 @@ hr.clear {
 	margin: 0;
 	visibility: hidden;
 }
+/* Set up the Shoutbox specific CSS */
 	#shoutbox { width: 260px }
 	#shoutbox form { width: 260px }
 	#entries { padding: 25px 0; width: 177px; margin: 0 auto }
@@ -34,7 +36,7 @@ hr.clear {
 	#shoutbox input.submit { margin-top: 25px; background: transparent url(../_img/button.png) no-repeat -10px -10px; width: 89px; height: 0; padding-top: 29px; font-size: 1px;  }
 	#shoutbox input.submit:hover { background-position: -10px -47px; }
 	#shoutbox input.submit:focus { outline: none; background-position: -10px -84px; }
-	#shoutbox textarea { padding: 5px; background-position: -10px -45px; height: 79px; color: #d9d9d9; }
+	#shoutbox textarea { line-height: 1.5; padding: 5px; background-position: -10px -45px; height: 79px; color: #d9d9d9; }
 	
 	#shoutbox input.hover, #shoutbox input:hover, #shoutbox input:focus { background-position: -196px -10px; color: #fff;}
 	#shoutbox textarea.hover, #shoutbox textarea:hover, #shoutbox textarea:focus { background-position: -196px -45px; color: #fff; }

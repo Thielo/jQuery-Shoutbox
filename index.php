@@ -21,7 +21,7 @@
 		<h1>Ajax Shoutbox</h1>
 		
 		<div id="shoutbox" class="wrapper">
-			<div id="entries"><noscript><?php include('backend.inc.php'); ?></noscript></div>
+			<div id="entries"><noscript><?php include('_inc/backend.inc.php'); ?></noscript></div>
 			<form id="shout" class="wrapper" action="backend.inc.php" method="post">
 				<input type="hidden" name="format" value="json" />
 				<input type="hidden" name="action" value="write">

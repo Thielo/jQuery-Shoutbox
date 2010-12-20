@@ -9,7 +9,13 @@ Version 0.1.1
 Version 0.5
 	-	Added: jQuery Code
 	-	Added: Make it work ;)
-	
+
+Version 0.5.1
+	- Changed: File location of include files to "_inc"
+	- Changed: Line height of the textarea (CSS file)
+	- Deleted: old.js - piece of crap ;)
+	- Added: Read all or Read just a specific count of posts
+	- Added: Added a spooky Css file ;)
 	
 Upcomming Versions
 	-	Bugfixing

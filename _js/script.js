@@ -8,12 +8,11 @@ $(document).ready(function () {
 	fetch();
 	$('input[type=submit]').click(function(){ $name = $('#name').attr('value'); $message = $('#message').attr('value'); write($name, $message); return false; });
 });
-
 /* Fetch from Database */
-function fetch(){ $.ajax({ url: "backend.inc.php", context: document.body, success: function(msg){ $("#entries").html(msg); }}); }
-
+function fetch(){ $.ajax({ url:"_inc/backend.inc.php", context:document.body, success:function(msg){ $("#entries").html(msg); }}); }
 /* Write to Database */
-function write($n, $m){ $.ajax({ type: "POST", url: "backend.inc.php", data: "action=write&name=" + $n + "&message=" + $m, success: function(msg){ fetch(); } }); }
-
+function write($n, $m){
+	$.ajax({ type:"POST", url:"_inc/backend.inc.php", data:"action=write&name="+$n+"&message="+$m,success:function(msg){ fetch(); } });
+}
 /* Set interval for Autoreload */
 window.setInterval("fetch();", 5000);
