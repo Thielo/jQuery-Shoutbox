@@ -1,11 +1,14 @@
 @charset "utf-8";
 @import url('reset.css');
-/*@import url('demo.css');*/
+@import url('richardthielde.css');
 /* insert here other import Files */
 /* Core CSS Selectors */
 /* Set-Up here your standard Classes */
+
+
+
 body {  font-size: 12px; background: #aaa url(../_img/bg.jpg) repeat left top; font-family: "Lucida Grande";}
-.wrapper { width: 981px; margin: 0 auto; }
+.wrapper { width: 381px; margin: 0 auto; }
 .clear { clear: both !important; }
 .left { float: left; }
 .right { float: right; }
@@ -16,6 +19,8 @@ hr.clear {
 	margin: 0;
 	visibility: hidden;
 }
+h2 { position: relative; padding-top: 25px; color: #fff; font-size: 25px; text-shadow: 1px 1px 1px #333;}
+h2 span { font-size: 12px; position: absolute; margin: 8px 0 0 8px;}
 /* Set up the Shoutbox specific CSS */
 	#shoutbox { width: 260px }
 	#shoutbox form { width: 260px }
@@ -24,7 +29,7 @@ hr.clear {
 	.post:last-child { border-bottom: none; }
 	.post:first-child { border-top: none; }
 	.post.odd { color: #444;}
-	.post.even { color: #111; }
+	.post.even { color: #111; background: #ddd; }
 	#shoutbox form div.relative.clear { margin: 0 auto; padding-top: 15px; }
 	#entries .metaInfo { line-height: 1.2; }
 	#entries abbr { cursor: help; font-weight: bold; border-bottom: 1px dotted #fff;}
@@ -40,3 +45,93 @@ hr.clear {
 	
 	#shoutbox input.hover, #shoutbox input:hover, #shoutbox input:focus { background-position: -196px -10px; color: #fff;}
 	#shoutbox textarea.hover, #shoutbox textarea:hover, #shoutbox textarea:focus { background-position: -196px -45px; color: #fff; }
+	#shoutbox .error { color: #781717; margin: 3px 0; display: block; width: 170px; float: right; text-align: left; margin-left: ;}
+	#shoutbox .error.js { margin-left: 0; }
+	
+	.drop-shadow {
+	            position:relative;
+	            padding:1em; 
+	            margin:8px auto 10px; 
+	            background:#fff;
+	            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	               -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	                    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	        }
+
+	        .drop-shadow:before,
+	        .drop-shadow:after {
+	            content:"";
+	            position:absolute; 
+	            z-index:-2;
+	            bottom:15px;
+	            left:10px;
+	            width:50%;
+	            height:20%;
+	        }
+
+	        .drop-shadow:after{                 
+	            right:10px; 
+	            left:auto;
+	        }
+
+	        .round {
+	            -moz-border-radius:4px; 
+	                 border-radius:4px;
+	        }
+
+	        .round:before,
+	        .round:after { 
+	            max-width:300px;
+	            -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+	               -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	                    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	            -webkit-transform:rotate(-3deg);    
+	               -moz-transform:rotate(-3deg);   
+	                 -o-transform:rotate(-3deg);
+	                    transform:rotate(-3deg);
+	        }
+
+	        .round:after {
+	            -webkit-transform:rotate(3deg);   
+	               -moz-transform:rotate(3deg);  
+	                 -o-transform:rotate(3deg);
+	                    transform:rotate(3deg);
+	        }
+
+	        .curls {
+	            border:1px solid #efefef; 
+	            -moz-border-radius:0 0 120px 120px / 0 0 6px 6px;    
+	                 border-radius:0 0 120px 120px / 0 0 6px 6px;
+	        }
+
+	        .curls:before,
+	        .curls:after { 
+	            bottom:12px;
+	            max-width:200px;
+	            height:55%;
+	            -webkit-box-shadow:0 8px 16px rgba(0, 0, 0, 0.4); 
+	               -moz-box-shadow:0 8px 16px rgba(0, 0, 0, 0.4);
+	                    box-shadow:0 8px 16px rgba(0, 0, 0, 0.4);
+	            -webkit-transform:skew(-8deg) rotate(-4deg);
+	               -moz-transform:skew(-8deg) rotate(-4deg);
+	                 -o-transform:skew(-8deg) rotate(-4deg);
+	                    transform:skew(-8deg) rotate(-4deg);
+	        } 
+
+	        .curls:after { 
+	            -webkit-transform:skew(8deg) rotate(4deg); 
+	               -moz-transform:skew(8deg) rotate(4deg);     
+	                 -o-transform:skew(8deg) rotate(4deg); 
+	                    transform:skew(8deg) rotate(4deg);
+	        }
+	
+	
+/*	
+	* { outline: 2px dotted red !important }
+	* * { outline: 2px dotted green !important }
+	* * * { outline: 2px dotted orange !important }
+	* * * * { outline: 2px dotted blue !important }
+	* * * * * { outline: 1px solid red !important }
+	* * * * * * { outline: 1px solid green !important }
+	* * * * * * * { outline: 1px solid orange !important }
+	* * * * * * * * { outline: 1px solid blue !important } */

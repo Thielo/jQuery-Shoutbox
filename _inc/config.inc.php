@@ -20,7 +20,8 @@ function messageCountSet($cnt){
 	return $count;
 }
 /* Database Connection */
-mysql_connect("localhost", "root", "donnerstag");
-mysql_select_db("ajax_shoutbox");
+$setOddEven = 1;
+mysql_connect("YourDatabaseHost", "YourDatabaseUser", "YourDatabasePassword");
+mysql_select_db("YourDatabase");
 
 ?>

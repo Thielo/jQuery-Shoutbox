@@ -1,23 +1,33 @@
 Version 0.1
 	-	Initial Build
-	
+
 Version 0.1.1
 	-	Added: The Basic PHP Code for writing and fetching Posts
 	-	Added: Style and PHP Code for odd and even Posts
 	-	Changed: index.html renamed into index.php
-	
+
 Version 0.5
 	-	Added: jQuery Code
 	-	Added: Make it work ;)
 
 Version 0.5.1
-	- Changed: File location of include files to "_inc"
-	- Changed: Line height of the textarea (CSS file)
-	- Deleted: old.js - piece of crap ;)
-	- Added: Read all or Read just a specific count of posts
-	- Added: Added a spooky Css file ;)
-	
+	-	Changed: File location of include files to "_inc"
+	-	Changed: Line height of the textarea (CSS file)
+	-	Deleted: old.js - piece of crap ;)
+	-	Added: Read all or Read just a specific count of posts
+	-	Added: Added a spooky Css file ;)
+
+Version 0.6
+	-	Added: Some Style for the Posts and for the Header
+	-	Added: RichardThiel.de "Demo" Style
+	-	Added: Short Description
+	-	Fixed: Database Error
+	-	Added / Fixed: PHP empty field fix 
+
 Upcomming Versions
+	-	Javascript empty field fix
+	-	No Databae Connection Message
 	-	Bugfixing
 	-	More Bugfixing
 	-	Even more Bugfixing
+	-	Oh and some improvements
